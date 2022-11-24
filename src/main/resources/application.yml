@@ -1,6 +1,17 @@
 spring:
+
+  profiles:
+      include: oauth
+
   datasource:
     url: jdbc:mariadb://localhost:3306/webservice
-    driver-class-name: org.mariadb.jdbc.Driver
     username: root
     password: 
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      
+      
